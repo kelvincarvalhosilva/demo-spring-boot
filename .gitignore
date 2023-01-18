@@ -1,14 +1,25 @@
+/classes
+.DS_Store
+.settings
+/*.log
+/out/
 .gradle
 /build/
+build/
+.idea/*
+target/
+*.iml
+i18n/i18ngettext/*
+*.po
+bin
+.classpath
+.project
+.run
 
-# Ignore Gradle GUI config
-gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
 
-# Cache of project
-.gradletasknamecache
+# Visualization
+commands/env/
+visualization/graph-db/
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+
