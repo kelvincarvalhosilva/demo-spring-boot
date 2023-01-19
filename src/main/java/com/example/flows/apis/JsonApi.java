@@ -38,7 +38,7 @@ public enum JsonApi {
 
     } catch (Exception e) {
       log.error("Error POST jsonplaceholder:" + e.getMessage());
-      throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error POST jsonplaceholder", e);
+      throw new RuntimeException(e);
     }
 
     return response;
@@ -56,7 +56,7 @@ public enum JsonApi {
       response = objectMapper.readValue(requestResponse, ResponseExampleDTO.class);
     } catch (Exception e) {
       log.error("Error PUT jsonplaceholder:" + e.getMessage());
-      throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "ERROR", e);
+      throw new RuntimeException(e);
     }
 
     return response;
